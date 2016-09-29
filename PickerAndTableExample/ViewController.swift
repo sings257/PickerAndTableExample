@@ -21,6 +21,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     
+    // UIPickerViewDataSource  Required Methods
+
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     
+    // UIPickerViewDelegate Optional Methods
+
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "hello"
     }
